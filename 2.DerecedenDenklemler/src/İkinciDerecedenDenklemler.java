@@ -1,8 +1,8 @@
 
-public class ÝkinciDerecedenDenklemler {
+public class Ä°kinciDerecedenDenklemler {
 
 	
-	private double a,b,c;		// f(x) = ax² + bx + c
+	private double a,b,c;		// f(x) = axÂ² + bx + c
 
 	public double getA() {
 		return a;
@@ -28,36 +28,36 @@ public class ÝkinciDerecedenDenklemler {
 		this.c = c;
 	}
 	
-	public ÝkinciDerecedenDenklemler(double a, double b, double c){
+	public Ä°kinciDerecedenDenklemler(double a, double b, double c){
 		
 		this.a = a;
 		this.b = b;
 		this.c = c;
 	}
 	
-	public ÝkinciDerecedenDenklemler(ÝkinciDerecedenDenklemler Kopya){
+	public Ä°kinciDerecedenDenklemler(Ä°kinciDerecedenDenklemler Kopya){
 		
 		a = Kopya.getA();
 		b = Kopya.getB();
 		c = Kopya.getC();
 	}
 	
-	public ÝkinciDerecedenDenklemler Topla(ÝkinciDerecedenDenklemler YeniDenklem){
+	public Ä°kinciDerecedenDenklemler Topla(Ä°kinciDerecedenDenklemler YeniDenklem){
 		
 		double Atoplam = getA() + YeniDenklem.getA();
 		double Btoplam = getB() + YeniDenklem.getB();
 		double Ctoplam = getC() + YeniDenklem.getC();
 		
-		return new ÝkinciDerecedenDenklemler(Atoplam, Btoplam, Ctoplam);
+		return new Ä°kinciDerecedenDenklemler(Atoplam, Btoplam, Ctoplam);
 	}
 	
-	public ÝkinciDerecedenDenklemler Cýkar(ÝkinciDerecedenDenklemler YeniDenklem){
+	public Ä°kinciDerecedenDenklemler Cikar(Ä°kinciDerecedenDenklemler YeniDenklem){
 		
-		double ACýkar = getA() - YeniDenklem.getA();
-		double BCýkar = getB() - YeniDenklem.getB();
-		double CCýkar = getC() - YeniDenklem.getC();
+		double ACikar = getA() - YeniDenklem.getA();
+		double BCikar = getB() - YeniDenklem.getB();
+		double CCikar = getC() - YeniDenklem.getC();
 		
-		return new ÝkinciDerecedenDenklemler(ACýkar, BCýkar, CCýkar);	
+		return new Ä°kinciDerecedenDenklemler(ACikar, BCikar, CCikar);	
 	}
 
 	public void KokBulma(){
@@ -71,12 +71,12 @@ public class ÝkinciDerecedenDenklemler {
 		}
 		
 		if (delta < 0) { 
-			System.out.println("Denklemin Gerçel Kökü Yoktur."); 
+			System.out.println("Denklemin GerÃ§el KÃ¶kÃ¼ Yoktur."); 
 		} 
 		
 		if (delta == 0) { 
 			double x = (-1 * b) / (2 * a); 
-			System.out.println("Çakýþýk kökü var x1= x2= " + x); 
+			System.out.println("cakisik kÃ¶kÃ¼ var x1= x2= " + x); 
 			}	
 	}
 	
@@ -92,25 +92,25 @@ public class ÝkinciDerecedenDenklemler {
 		
 		
 		if(a<0){
-			return "Denklem = " + getA() + "X² " + "+ " + getB() + "X " + "+ "  + getC();
+			return "Denklem = " + getA() + "XÂ² " + "+ " + getB() + "X " + "+ "  + getC();
 		}
 		if(b<0){
-			return "Denklem = " + getA() + "X² " + getB() + "X " + "+ "  + getC();
+			return "Denklem = " + getA() + "XÂ² " + getB() + "X " + "+ "  + getC();
 		}
 		if(c<0){
-			return "Denklem = " + getA() + "X² " + "+ " + getB() + "X " + getC();
+			return "Denklem = " + getA() + "XÂ² " + "+ " + getB() + "X " + getC();
 		}
 		if(a<0 && b<0){
-			return "Denklem = " + getA() + "X² " + getB() + "X " + "+ "  + getC();
+			return "Denklem = " + getA() + "XÂ² " + getB() + "X " + "+ "  + getC();
 		}
 		if(a<0 && c<0){
-			return "Denklem = " + getA() + "X² " + "+ " + getB() + "X " + getC();
+			return "Denklem = " + getA() + "XÂ² " + "+ " + getB() + "X " + getC();
 		}
 		if(b<0 && c<0){
-			return "Denklem = " + getA() + "X² " + getB() + "X " + getC();
+			return "Denklem = " + getA() + "XÂ² " + getB() + "X " + getC();
 		}
 		if(a<0 && b<0 && c<0){
-			return "Denklem = " + getA() + "X² " + getB() + "X " + getC();
+			return "Denklem = " + getA() + "XÂ² " + getB() + "X " + getC();
 		}
 		
 		
@@ -118,16 +118,16 @@ public class ÝkinciDerecedenDenklemler {
 			return "Denklem = " + getB() + "X " + "+ "  + getC();
 		}
 		if(b==0){
-			return "Denklem = " + getA() + "X² " + " + " + getC();
+			return "Denklem = " + getA() + "XÂ² " + " + " + getC();
 		}
 		if(c==0){
-			return "Denklem = " + getA() + "X² " + "+ " + getB() + "X ";
+			return "Denklem = " + getA() + "XÂ² " + "+ " + getB() + "X ";
 		}
 		if(a==0 && b==0){
 			return "Denklem = " + getC();
 		}
 		if(b==0 && c==0){
-			return "Denklem = " + getA() + "X² ";
+			return "Denklem = " + getA() + "XÂ² ";
 		}
 		if(a==0 && c==0){
 			return "Denklem = " + getB() + "X ";
@@ -135,7 +135,7 @@ public class ÝkinciDerecedenDenklemler {
 		if(a==0 && b==0 && c==0){
 			return "Denklem = 0";
 		}
-			return "Denklem = " + getA() + "X² " + "+ " + getB() + "X " + "+ "  + getC();
+			return "Denklem = " + getA() + "XÂ² " + "+ " + getB() + "X " + "+ "  + getC();
 		}
 
 }
